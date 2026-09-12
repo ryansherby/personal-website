@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" role="img" aria-label="Portrait placeholder">
+  <rect width="300" height="400" fill="#151B23"/>
+  <circle cx="214" cy="86" r="34" fill="#4493F8"/>
+  <path d="M0 198C72 168 148 236 300 186V400H0Z" fill="#0D1117"/>
+  <path d="M0 268C96 232 176 312 300 262V400H0Z" fill="#151B23"/>
+  <path d="M0 332C110 304 190 354 300 328V400H0Z" fill="#3D444D"/>
+  <text x="22" y="376" fill="#F0F6FC" font-family="Aptos, Segoe UI, sans-serif" font-size="22" letter-spacing="2">RS</text>
+</svg>
