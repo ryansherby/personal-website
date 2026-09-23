@@ -1,6 +1,7 @@
 import type { MediaPost as MediaPostData } from '../content'
 import { assetUrl } from '../lib/assetUrl'
 import { youtubeEmbedSrc } from '../lib/youtube'
+import { MarkdownText } from './MarkdownText'
 
 type MediaPostProps = {
   post: MediaPostData
@@ -47,11 +48,9 @@ export function MediaPost({ post }: MediaPostProps) {
             />
           </a>
         )}
-        <p className="media-post__description">
-          <a href={post.href} target="_blank" rel="noopener noreferrer">
-            {post.description}
-          </a>
-        </p>
+        <MarkdownText className="media-post__description">
+          {post.description}
+        </MarkdownText>
       </div>
     </article>
   )

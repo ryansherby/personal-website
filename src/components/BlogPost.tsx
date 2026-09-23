@@ -1,4 +1,5 @@
 import type { BlogPost as BlogPostData } from '../content'
+import { MarkdownText } from './MarkdownText'
 
 type BlogPostProps = {
   post: BlogPostData
@@ -13,13 +14,6 @@ function formatDate(isoDate: string) {
   }).format(date)
 }
 
-function splitParagraphs(body: string) {
-  return body
-    .split(/\n\s*\n/)
-    .map((paragraph) => paragraph.trim())
-    .filter(Boolean)
-}
-
 export function BlogPost({ post }: BlogPostProps) {
   return (
     <article className="blog-post">
@@ -27,11 +21,7 @@ export function BlogPost({ post }: BlogPostProps) {
       <time className="blog-post__date" dateTime={post.date}>
         {formatDate(post.date)}
       </time>
-      {splitParagraphs(post.body).map((paragraph) => (
-        <p key={paragraph} className="blog-post__body">
-          {paragraph}
-        </p>
-      ))}
+      <MarkdownText className="blog-post__body">{post.body}</MarkdownText>
     </article>
   )
 }

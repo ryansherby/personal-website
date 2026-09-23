@@ -2,6 +2,7 @@ export type MediaPost = {
   title: string
   /** Photo path, or a YouTube watch / youtu.be / embed URL */
   image: string
+  /** Markdown */
   description: string
   href: string
 }
@@ -9,6 +10,7 @@ export type MediaPost = {
 export type BlogPost = {
   title: string
   date: string
+  /** Markdown */
   body: string
 }
 
@@ -29,6 +31,7 @@ export type SiteProfile = {
   bannerAlt?: string
   photo: string
   photoAlt: string
+  /** Markdown paragraphs */
   summary: string[]
   links?: SiteLinks
 }

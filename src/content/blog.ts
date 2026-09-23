@@ -7,7 +7,7 @@ export const blog: ContentGroup<BlogPost>[] = [
       {
         title: 'Opening the notebook',
         date: '2026-09-07',
-        body: 'A sample blog post. Title and date sit above a run of plain paragraphs.\n\nSeparate paragraphs with a blank line in the body string. Edit this file to replace the placeholders with real notes.',
+        body: 'A sample blog post. Title and date sit above a **markdown** body.\n\nYou can use *emphasis*, [links](https://github.com), lists, and `inline code`. Separate paragraphs with a blank line.',
       },
     ],
   },

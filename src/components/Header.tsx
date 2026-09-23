@@ -1,6 +1,7 @@
 import type { SiteProfile } from '../content'
 import { SocialLinks } from './SocialLinks'
 import { assetUrl } from '../lib/assetUrl'
+import { MarkdownText } from './MarkdownText'
 
 type HeaderProps = {
   profile: SiteProfile
@@ -20,9 +21,9 @@ export function Header({ profile }: HeaderProps) {
         <h1 className="site-header__name">{profile.name}</h1>
         {profile.links ? <SocialLinks links={profile.links} /> : null}
         {profile.summary.map((paragraph) => (
-          <p key={paragraph} className="site-header__summary">
+          <MarkdownText key={paragraph} className="site-header__summary">
             {paragraph}
-          </p>
+          </MarkdownText>
         ))}
       </div>
     </header>

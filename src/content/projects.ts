@@ -8,7 +8,7 @@ export const projects: ContentGroup<MediaPost>[] = [
         title: 'Field Notes Atlas',
         image: '/media/project-atlas.svg',
         description:
-          'A sample project card. Title above; image on the left, short description on the right. The whole card opens the link in a new tab.',
+          'A sample project card. Title and image still open the project link; descriptions can include **markdown**, including [inline links](https://github.com).',
         href: 'https://github.com',
       },
       {
@@ -36,11 +36,11 @@ export const projects: ContentGroup<MediaPost>[] = [
     heading: 'All Projects',
     items: [
       {
-        title: 'Project Walkthrough',
-        image: 'https://www.youtube.com/watch?v=aqz-KE-bpKQ',
+        title: 'BLS Transformer',
+        image: 'assets/bls-transformer.png',
         description:
           'The image field also accepts a YouTube URL. The left-hand slot becomes an embedded video instead of a still.',
-        href: 'https://www.youtube.com/watch?v=aqz-KE-bpKQ',
+        href: 'https://pypi.org/project/bls-transformer/',
       },
     ],
   },
