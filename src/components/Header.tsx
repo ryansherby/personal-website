@@ -1,4 +1,6 @@
 import type { SiteProfile } from '../content'
+import { SocialLinks } from './SocialLinks'
+import { assetUrl } from '../lib/assetUrl'
 
 type HeaderProps = {
   profile: SiteProfile
@@ -9,13 +11,14 @@ export function Header({ profile }: HeaderProps) {
     <header className="site-header">
       <img
         className="site-header__photo"
-        src={profile.photo}
+        src={assetUrl(profile.photo)}
         alt={profile.photoAlt}
         width={280}
         height={373}
       />
       <div className="site-header__copy">
         <h1 className="site-header__name">{profile.name}</h1>
+        {profile.links ? <SocialLinks links={profile.links} /> : null}
         {profile.summary.map((paragraph) => (
           <p key={paragraph} className="site-header__summary">
             {paragraph}

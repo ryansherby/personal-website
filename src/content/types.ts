@@ -1,5 +1,6 @@
 export type MediaPost = {
   title: string
+  /** Photo path, or a YouTube watch / youtu.be / embed URL */
   image: string
   description: string
   href: string
@@ -16,11 +17,20 @@ export type ContentGroup<T> = {
   items: T[]
 }
 
+export type SiteLinks = {
+  email?: string
+  linkedin?: string
+  github?: string
+}
+
 export type SiteProfile = {
   name: string
+  banner?: string
+  bannerAlt?: string
   photo: string
   photoAlt: string
   summary: string[]
+  links?: SiteLinks
 }
 
 export const navigation = [

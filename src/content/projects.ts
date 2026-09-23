@@ -2,7 +2,7 @@ import type { ContentGroup, MediaPost } from './types'
 
 export const projects: ContentGroup<MediaPost>[] = [
   {
-    heading: 'Selected work',
+    heading: 'Selected Work',
     items: [
       {
         title: 'Field Notes Atlas',
@@ -21,7 +21,7 @@ export const projects: ContentGroup<MediaPost>[] = [
     ],
   },
   {
-    heading: 'In progress',
+    heading: 'In Progress',
     items: [
       {
         title: 'Trail Log',
@@ -29,6 +29,18 @@ export const projects: ContentGroup<MediaPost>[] = [
         description:
           'Optional group headings (like this one) are just a heading field on a group. Omit the heading to show an unlabeled block of posts.',
         href: 'https://github.com',
+      },
+    ],
+  },
+  {
+    heading: 'All Projects',
+    items: [
+      {
+        title: 'Project Walkthrough',
+        image: 'https://www.youtube.com/watch?v=aqz-KE-bpKQ',
+        description:
+          'The image field also accepts a YouTube URL. The left-hand slot becomes an embedded video instead of a still.',
+        href: 'https://www.youtube.com/watch?v=aqz-KE-bpKQ',
       },
     ],
   },
